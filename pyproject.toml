@@ -1,6 +1,14 @@
 [project]
+name = "db"
+version = "0.1.0"
 dependencies = [
   "django-mongodb-backend",
 ]
-name = "db"
-version = "0.1.0"
+
+[project.optional-dependencies]
+dev = [
+  "pre-commit",
+]
+
+[tool.setuptools]
+packages = ["backend", "mongo_migrations"]
