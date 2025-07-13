@@ -1,0 +1,6 @@
+[project]
+dependencies = [
+  "django-mongodb-backend",
+]
+name = "db"
+version = "0.1.0"
